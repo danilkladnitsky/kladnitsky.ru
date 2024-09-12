@@ -9,7 +9,7 @@ export const UsefulLinks = () => {
     return (
         <GroupContent>
             <Button
-                size="xl"
+                size="l"
                 view="outlined"
                 type="button"
                 href="https://t.me/danilkladnitsky"
@@ -20,7 +20,7 @@ export const UsefulLinks = () => {
                 Скачать CV
             </Button>
             <Button
-                size="xl"
+                size="l"
                 view="outlined"
                 type="button"
                 href="https://github.com/danilkladnitsky"
