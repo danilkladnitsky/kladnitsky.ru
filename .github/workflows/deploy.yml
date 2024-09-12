@@ -10,14 +10,14 @@ jobs:
     name: Build app
     runs-on: self-hosted
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - uses: SpicyPizza/create-envfile@v1.3
         with:
           envkey_APP_VERSION: ${{ secrets.SHORT_SHA }}
           file_name: .env
           fail_on_empty: false
-
-      - name: Checkout code
-        uses: actions/checkout@v3
 
       - name: Build service
         run: docker compose -f docker-compose.prod.yml --env-file .env build --parallel
