@@ -1,0 +1,34 @@
+@import '@/styles/variables.scss';
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: map-get($map: $layoutDimensions, $key: 'gap-xl');
+    gap: map-get($map: $layoutDimensions, $key: 'gap-lg');
+
+    max-height: calc(100vh - 216px);
+    overflow: auto;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black calc(100% - map-get($map: $layoutDimensions, $key: 'padding-sm')),
+        transparent 100%
+    );
+
+    padding: map-get($map: $layoutDimensions, $key: 'padding-sm');
+
+    & {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+    }
+    &::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}

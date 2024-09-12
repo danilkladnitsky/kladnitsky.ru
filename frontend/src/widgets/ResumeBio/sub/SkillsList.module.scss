@@ -1,0 +1,6 @@
+@import '@/styles/variables.scss';
+
+.skillsList {
+    gap: map-get($map: $layoutDimensions, $key: 'gap-sm');
+    margin-top: map-get($map: $layoutDimensions, $key: 'gap-sm');
+}

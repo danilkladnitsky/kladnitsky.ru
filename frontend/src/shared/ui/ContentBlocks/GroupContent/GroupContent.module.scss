@@ -1,0 +1,7 @@
+@import '@/styles/variables.scss';
+
+.groupContent {
+    display: flex;
+    align-items: center;
+    gap: map-get($map: $layoutDimensions, $key: 'gap-md');
+}

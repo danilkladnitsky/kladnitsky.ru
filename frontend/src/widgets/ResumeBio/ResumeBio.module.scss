@@ -1,0 +1,20 @@
+@import '@/styles/variables.scss';
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    line-height: 42px;
+}
+
+.greetings {
+    font-family: 'Medium';
+    margin-bottom: map-get($map: $layoutDimensions, $key: 'gap-md');
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: map-get($map: $layoutDimensions, $key: 'gap-md');
+
+    margin-top: map-get($map: $layoutDimensions, $key: 'gap-md');
+}

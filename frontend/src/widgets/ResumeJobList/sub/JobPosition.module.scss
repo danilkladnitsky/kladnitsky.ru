@@ -1,0 +1,20 @@
+@import '@/styles/variables.scss';
+
+.jobPosition {
+    display: flex;
+    flex-direction: column;
+    gap: map-get($map: $layoutDimensions, $key: 'gap-md');
+}
+
+.company {
+}
+
+.companyLogo {
+    flex: auto;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: map-get($map: $layoutDimensions, $key: 'gap-xs');
+}

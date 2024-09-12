@@ -1,0 +1,24 @@
+@import '@/styles/variables.scss';
+
+.pageWrapper {
+    min-height: 100vh;
+    padding: map-get($map: $layoutDimensions, $key: 'padding-lg');
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.pageContent {
+    position: relative;
+
+    width: 100%;
+    max-width: map-get($map: $gridBreakpoints, $key: 'md');
+
+    flex: 1 1;
+}

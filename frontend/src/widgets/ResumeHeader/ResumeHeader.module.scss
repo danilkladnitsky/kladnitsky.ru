@@ -1,0 +1,14 @@
+@import '@/styles/variables.scss';
+
+.headerWrapper {
+    height: map-get($map: $layoutDimensions, $key: 'header-height');
+    margin-bottom: map-get($map: $layoutDimensions, $key: 'padding-lg');
+    padding: map-get($map: $layoutDimensions, $key: 'padding-sm');
+
+    // border-radius: 12px;
+    // background-color: map-get($map: $colors, $key: 'secondary-background');
+}
+
+.resumeHeader {
+    justify-content: space-between;
+}
