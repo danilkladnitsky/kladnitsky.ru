@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    environment:
+      - APP_VERSION=${APP_VERSION}
+    ports:
+      - "81:4000"
+    command: npm run start

@@ -8,13 +8,21 @@ import React from 'react';
 export const UsefulLinks = () => {
     return (
         <GroupContent>
-            <Button size="xl" view="outlined" href="https://t.me/danilkladnitsky" target="_blank">
+            <Button
+                size="xl"
+                view="outlined"
+                type="button"
+                href="https://t.me/danilkladnitsky"
+                target="_blank"
+                disabled
+            >
                 <Icon data={ArrowShapeDownToLine} />
                 Скачать CV
             </Button>
             <Button
                 size="xl"
                 view="outlined"
+                type="button"
                 href="https://github.com/danilkladnitsky"
                 target="_blank"
             >
