@@ -3,7 +3,10 @@
 .bio {
     display: flex;
     flex-direction: column;
-    line-height: 42px;
+
+    h1 {
+        line-height: 28px;
+    }
 }
 
 .greetings {
@@ -17,4 +20,21 @@
     gap: map-get($map: $layoutDimensions, $key: 'gap-md');
 
     margin-top: map-get($map: $layoutDimensions, $key: 'gap-md');
+}
+
+@media (max-width: 768px) {
+    .skills {
+        h1,
+        h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
 }

@@ -2,5 +2,5 @@
 
 .skillsList {
     gap: map-get($map: $layoutDimensions, $key: 'gap-sm');
-    margin-top: map-get($map: $layoutDimensions, $key: 'gap-sm');
+    margin-top: map-get($map: $layoutDimensions, $key: 'gap-xs');
 }
