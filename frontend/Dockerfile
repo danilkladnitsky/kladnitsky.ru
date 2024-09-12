@@ -4,6 +4,9 @@ WORKDIR /app
 
 COPY package*.json ./
 
+ARG APP_VERSION
+ENV APP_VERSION=${APP_VERSION}
+
 RUN npm install
 
 COPY . .

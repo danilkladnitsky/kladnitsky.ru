@@ -17,7 +17,7 @@ export default function Resume() {
                     <ResumeBio />
                     <UsefulLinks />
                 </ContentWrapper>
-                <ClientVersion className={styles.footer} />
+                <ClientVersion />
             </PageWrapper>
         </>
     );

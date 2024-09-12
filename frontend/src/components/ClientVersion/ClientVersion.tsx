@@ -1,21 +1,13 @@
+/* eslint-disable no-console */
 'use client';
 
-import {CodeCommit} from '@gravity-ui/icons';
-import {Icon, Label} from '@gravity-ui/uikit';
-import React from 'react';
+export const ClientVersion = () => {
+    const commitHash = process.env.APP_VERSION;
 
-interface Props {
-    className?: string;
-}
-
-export const ClientVersion = ({className}: Props) => {
-    return (
-        <div className={className}>
-            <a href="https://github.com/danilkladnitsky/gravity-ui" target="_blank">
-                <Label size="s" icon={<Icon data={CodeCommit} />}>
-                    fsf4d0
-                </Label>
-            </a>
-        </div>
+    console.info(
+        'Версия клиента: ',
+        commitHash,
+        `https://github.com/danilkladnitsky/kladnitsky.ru/commit/${commitHash}`,
     );
+    return null;
 };
