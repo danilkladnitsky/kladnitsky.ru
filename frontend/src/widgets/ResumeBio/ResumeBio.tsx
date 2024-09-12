@@ -18,7 +18,8 @@ export const ResumeBio = () => {
                     Добрый день.
                 </Text>
                 <Text as="h1" variant="header-1">
-                    Меня зовут Данил Кладницкий, разрабатываю веб-интерфейсы в Газпромбанке.
+                    Меня зовут Данил Кладницкий,
+                    <br /> я разрабатываю веб-интерфейсы в Газпромбанке.
                 </Text>
                 <div className={styles.skills}>
                     <Text as="h3" variant="header-1">

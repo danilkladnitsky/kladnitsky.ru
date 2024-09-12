@@ -5,6 +5,8 @@
     margin-bottom: map-get($map: $layoutDimensions, $key: 'padding-lg');
     padding: map-get($map: $layoutDimensions, $key: 'padding-sm');
 
+    letter-spacing: 1px;
+
     // border-radius: 12px;
     // background-color: map-get($map: $colors, $key: 'secondary-background');
 }

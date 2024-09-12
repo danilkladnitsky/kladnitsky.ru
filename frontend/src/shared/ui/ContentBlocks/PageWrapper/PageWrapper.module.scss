@@ -1,14 +1,12 @@
 @import '@/styles/variables.scss';
 
 .pageWrapper {
-    min-height: 100vh;
+    max-height: 100vh;
     padding: map-get($map: $layoutDimensions, $key: 'padding-lg');
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    overflow: auto;
 
     position: relative;
     z-index: 2;

@@ -5,9 +5,11 @@ import {ArrowShapeDownToLine, Code} from '@gravity-ui/icons';
 import {Button, Icon} from '@gravity-ui/uikit';
 import React from 'react';
 
+import styles from './UsefulLinks.module.scss';
+
 export const UsefulLinks = () => {
     return (
-        <GroupContent>
+        <GroupContent className={styles.usefulLinks}>
             <Button
                 size="l"
                 view="outlined"
