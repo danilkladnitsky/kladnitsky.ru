@@ -5,6 +5,8 @@ import '@gravity-ui/uikit/styles/styles.css';
 
 import '../styles/globals.scss';
 import Head from 'next/head';
+import {Suspense} from 'react';
+import {YandexMetrika} from './yandex-metrika';
 
 export const metadata: Metadata = {
     title: 'Danil Kladnitsky | Frontend Developer',
@@ -21,6 +23,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
+            <Suspense>
+                <YandexMetrika />
+            </Suspense>
             <body>{children}</body>
         </html>
     );
