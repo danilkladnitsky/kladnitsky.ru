@@ -10,7 +10,7 @@
 }
 
 .greetings {
-    font-family: 'Medium';
+    font-family: Medium;
     font-size: 32px;
     margin-bottom: map-get($map: $layoutDimensions, $key: 'gap-md');
 }
@@ -27,6 +27,7 @@
     margin-top: map-get($map: $layoutDimensions, $key: 'gap-md');
 
     h3 {
+        font-family: Medium;
         font-size: 18px;
     }
 }
