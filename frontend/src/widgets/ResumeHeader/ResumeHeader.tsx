@@ -1,12 +1,10 @@
 'use client';
 
-import React from 'react';
-
 import {GroupContent, HeaderContent} from '@/shared/ui';
 
-import styles from './ResumeHeader.module.scss';
+import {Code} from '@gravity-ui/icons';
 import {Button, Icon, Text} from '@gravity-ui/uikit';
-import {LogoTelegram} from '@gravity-ui/icons';
+import styles from './ResumeHeader.module.scss';
 
 export const ResumeHeader = () => {
     return (
@@ -15,12 +13,16 @@ export const ResumeHeader = () => {
                 <Text as="h2" variant="header-1">
                     kladnitsky.ru
                 </Text>
-                <GroupContent>
-                    <Button view="action" href="https://t.me/danilkladnitsky" target="_blank">
-                        <Icon data={LogoTelegram} />
-                        Telegram
-                    </Button>
-                </GroupContent>
+                <Button
+                    size="l"
+                    view="flat-contrast"
+                    type="button"
+                    href="https://github.com/danilkladnitsky"
+                    target="_blank"
+                >
+                    <Icon data={Code} />
+                    Github
+                </Button>
             </GroupContent>
         </HeaderContent>
     );
