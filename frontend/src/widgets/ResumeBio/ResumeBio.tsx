@@ -13,7 +13,7 @@ export const ResumeBio = () => {
         <section>
             <ContentWrapper className={styles.bio}>
                 <Text className={styles.greetings} as="h2" variant="header-2">
-                    Добрый деньs.
+                    Добрый день.
                 </Text>
                 <Text className={styles.role} as="h1" variant="header-1">
                     Меня зовут Данил Кладницкий,

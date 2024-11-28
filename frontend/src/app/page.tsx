@@ -4,8 +4,12 @@ import {ResumeBio, ResumeHeader, UsefulLinks} from '@/widgets';
 import AsciiBackground from '@/components/AsciiBackground/AsciiBackground';
 import {ContentWrapper} from '@/shared/ui';
 
-import styles from './page.module.scss';
 import {ClientVersion} from '@/components';
+
+import '@gravity-ui/uikit/styles/styles.css';
+
+import '../styles/globals.scss';
+import styles from './page.module.scss';
 
 export default function Resume() {
     return (

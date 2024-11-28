@@ -1,11 +1,8 @@
 import type {Metadata} from 'next';
 
-// import '@gravity-ui/uikit/styles/fonts.css';
-import '@gravity-ui/uikit/styles/styles.css';
-
 import Head from 'next/head';
 import {Suspense} from 'react';
-import '../styles/globals.scss';
+
 import {YandexMetrika} from './yandex-metrika';
 
 export const metadata: Metadata = {
