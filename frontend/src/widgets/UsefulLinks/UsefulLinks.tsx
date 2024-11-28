@@ -10,14 +10,7 @@ import styles from './UsefulLinks.module.scss';
 export const UsefulLinks = () => {
     return (
         <GroupContent className={styles.usefulLinks}>
-            <Button
-                size="l"
-                view="outlined"
-                type="button"
-                href="https://t.me/danilkladnitsky"
-                target="_blank"
-                disabled
-            >
+            <Button size="l" view="outlined" type="button" href="/resume/ru.pdf" target="_blank">
                 <Icon data={ArrowShapeDownToLine} />
                 Скачать CV
             </Button>
