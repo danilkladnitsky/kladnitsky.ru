@@ -23,7 +23,7 @@ jobs:
         run: docker compose -f docker-compose.prod.yml down
 
       - name: Build service
-        run: docker compose -f docker-compose.prod.yml build --parallel
+        run: docker compose -f docker-compose.prod.yml build
 
       - name: Start service
-        run: docker compose -f docker-compose.prod.yml up -d
+        run: docker compose -f docker-compose.prod.yml up --force-recreate -d
