@@ -1,7 +1,7 @@
 @import '@/styles/variables.scss';
 
 .pageWrapper {
-    max-height: 100vh;
+    max-height: 100dvh;
     padding: map-get($map: $layoutDimensions, $key: 'padding-lg');
 
     display: flex;
