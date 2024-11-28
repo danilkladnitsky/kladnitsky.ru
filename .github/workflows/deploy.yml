@@ -19,11 +19,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build service
-        run: docker compose -f docker-compose.prod.yml build --parallel
-
       - name: Stop service
         run: docker compose -f docker-compose.prod.yml down
+
+      - name: Build service
+        run: docker compose -f docker-compose.prod.yml build --parallel
 
       - name: Start service
         run: docker compose -f docker-compose.prod.yml up -d
