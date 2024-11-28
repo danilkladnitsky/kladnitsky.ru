@@ -1,12 +1,5 @@
 @import 'variables.scss';
 
-.g-root {
-    --g-font-family-sans: Regular, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    --g-font-family-monospace: Regular, 'Menlo', 'Monaco', 'Consolas', 'Ubuntu Mono',
-        'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', 'Courier', monospace;
-    font-size: 1rem;
-}
-
 @font-face {
     font-family: Regular;
     src: url('/fonts/Regular.ttf') format('truetype');
@@ -20,6 +13,12 @@
 @font-face {
     font-family: Semibold;
     src: url('/fonts/Semibold.ttf') format('truetype');
+}
+
+.g-root {
+    --g-font-family-sans: Regular, 'Arial', sans-serif;
+    --g-font-family-monospace: Regular, monospace;
+    font-size: 1rem;
 }
 
 * {
