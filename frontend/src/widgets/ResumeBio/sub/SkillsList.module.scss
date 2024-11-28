@@ -4,7 +4,7 @@
     gap: map-get($map: $layoutDimensions, $key: 'gap-sm');
     margin-top: map-get($map: $layoutDimensions, $key: 'gap-xs');
 
-    span {
+    .skill {
         font-size: 16px;
     }
 }

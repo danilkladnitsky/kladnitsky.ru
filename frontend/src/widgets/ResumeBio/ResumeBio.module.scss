@@ -7,28 +7,28 @@
     h1 {
         line-height: 28px;
     }
-}
 
-.greetings {
-    font-family: Medium;
-    font-size: 32px;
-    margin-bottom: map-get($map: $layoutDimensions, $key: 'gap-md');
-}
+    .greetings {
+        margin-bottom: map-get($map: $layoutDimensions, $key: 'gap-md');
 
-.role {
-    font-size: 18px;
-}
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    gap: map-get($map: $layoutDimensions, $key: 'gap-md');
-
-    margin-top: map-get($map: $layoutDimensions, $key: 'gap-md');
-
-    h3 {
         font-family: Medium;
+        font-size: 32px;
+    }
+
+    .role {
         font-size: 18px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        gap: map-get($map: $layoutDimensions, $key: 'gap-md');
+
+        margin-top: map-get($map: $layoutDimensions, $key: 'gap-lg');
+
+        h3 {
+            font-size: 18px;
+        }
     }
 }
 
