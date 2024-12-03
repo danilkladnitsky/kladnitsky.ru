@@ -18,7 +18,7 @@
 .g-root {
     --g-font-family-sans: Regular, 'Arial', sans-serif;
     --g-font-family-monospace: Regular, monospace;
-    font-size: 1rem;
+    font-size: map-get($map: $fontSizes, $key: 'md');
 }
 
 * {
@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-size: 1rem;
+    font-size: map-get($map: $fontSizes, $key: 'md');
 }
 
 html,
@@ -49,7 +49,11 @@ body {
     color: map-get($map: $colors, $key: 'primary-text');
 
     font-family: Regular;
-    font-size: 16px;
+    font-size: 16px !important;
+
+    @media (max-width: 768px) {
+        font-size: 12px !important;
+    }
 }
 
 a {
