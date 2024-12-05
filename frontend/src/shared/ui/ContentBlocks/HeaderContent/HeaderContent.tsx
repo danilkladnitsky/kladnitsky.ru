@@ -1,9 +1,9 @@
-import React, {ReactNode} from 'react';
+import {ReactNode} from 'react';
 
 import {cn} from '@/shared/utils/cn';
 
-import styles from './HeaderContent.module.scss';
 import {ContentBlockWrapper} from '../_ContentBlockWrapper/_ContentBlockWrapper';
+import styles from './HeaderContent.module.scss';
 
 interface Props {
     children: ReactNode;

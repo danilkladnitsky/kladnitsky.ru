@@ -1,6 +1,8 @@
 import {ContentWrapper} from '@/shared/ui';
+
 import {Text} from '@gravity-ui/uikit';
 
+import {TranslatedText} from '@/i18n/TranslatedText';
 import styles from './ResumeBio.module.scss';
 import {SkillsList} from './sub/SkillsList';
 
@@ -13,23 +15,22 @@ export const ResumeBio = () => {
         <section>
             <ContentWrapper className={styles.bio}>
                 <Text className={styles.greetings} as="h2" variant="header-2">
-                    Добрый день.
+                    <TranslatedText translateKey="greetingShort" />
                 </Text>
                 <Text className={styles.role} as="h1" variant="header-1">
-                    Меня зовут Данил Кладницкий,
-                    <br /> я разрабатываю веб-интерфейсы в Газпромбанке.
+                    <TranslatedText translateKey="greetingLong" />
                 </Text>
                 <div className={styles.skills}>
                     <Text as="h3" variant="header-1">
-                        Создаю frontend-приложения с помощью
+                        <TranslatedText translateKey="aboutFrontend" />
                         <SkillsList skills={FRONTEND_SKILLS} />
                     </Text>
                     <Text as="h3" variant="header-1">
-                        Проектирую backend на технологиях
+                        <TranslatedText translateKey="aboutBackend" />
                         <SkillsList skills={BACKEND_SKILLS} />
                     </Text>
                     <Text as="h3" variant="header-1">
-                        Для деплоя приложений использую
+                        <TranslatedText translateKey="aboutDevOps" />
                         <SkillsList skills={DEVOPS_SKILLS} />
                     </Text>
                 </div>

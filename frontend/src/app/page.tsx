@@ -8,12 +8,13 @@ import {ClientVersion} from '@/components';
 
 import '@gravity-ui/uikit/styles/styles.css';
 
+import {AppContextProvider} from '@/context/AppContext';
 import '../styles/globals.scss';
 import styles from './page.module.scss';
 
 export default function Resume() {
     return (
-        <>
+        <AppContextProvider>
             <AsciiBackground />
             <PageWrapper>
                 <ResumeHeader />
@@ -23,6 +24,6 @@ export default function Resume() {
                 </ContentWrapper>
                 <ClientVersion />
             </PageWrapper>
-        </>
+        </AppContextProvider>
     );
 }

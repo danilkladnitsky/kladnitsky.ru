@@ -11,3 +11,9 @@
 .resumeHeader {
     justify-content: space-between;
 }
+
+.languagePicker {
+    background-color: map-get($map: $colors, $key: 'primary-background');
+    font-family: monospace;
+    width: 150px;
+}
