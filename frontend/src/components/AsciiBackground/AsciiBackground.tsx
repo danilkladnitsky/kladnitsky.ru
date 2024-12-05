@@ -20,13 +20,13 @@ const calculateCharacter = (
     const size = Math.min(cols, rows);
     const aspectRatio = aspect * 0.2;
     const position = {
-        x: ((4 * (x - cols / 4.5)) / size) * aspectRatio,
-        y: (5 * (y - rows / 4)) / size,
+        x: -((5 * (x - cols / 4.5)) / size) * aspectRatio,
+        y: -(5 * (y - rows / 4)) / size,
     };
 
     const index =
         Math.floor(
-            Math.abs(Math.cos(position.x * position.x - position.y * position.y) - timeFactor) *
+            Math.abs(Math.cos(position.x * position.x + position.y * position.y) - timeFactor) *
                 characterSetLength +
                 (Math.floor(x) % 2) * 2,
         ) % characterSetLength;
