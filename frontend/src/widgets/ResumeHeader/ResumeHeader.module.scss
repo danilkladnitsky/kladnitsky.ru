@@ -1,7 +1,8 @@
 @import '@/styles/variables.scss';
 
 .headerWrapper {
-    height: map-get($map: $layoutDimensions, $key: 'header-height');
+    min-height: map-get($map: $layoutDimensions, $key: 'header-height');
+    height: fit-content;
     margin-bottom: map-get($map: $layoutDimensions, $key: 'padding-lg');
     padding: map-get($map: $layoutDimensions, $key: 'padding-sm');
 

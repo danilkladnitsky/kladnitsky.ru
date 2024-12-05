@@ -1,7 +1,7 @@
 'use client';
 
 import {GroupContent} from '@/shared/ui';
-import {ArrowShapeDownToLine, LogoTelegram} from '@gravity-ui/icons';
+import {ArrowShapeDownToLine, Code, LogoTelegram} from '@gravity-ui/icons';
 import {Button, Icon} from '@gravity-ui/uikit';
 
 import {useAppContext} from '@/context/AppContext';
@@ -14,25 +14,40 @@ export const UsefulLinks = () => {
 
     return (
         <GroupContent className={styles.usefulLinks}>
+            <GroupContent>
+                <Button
+                    size="l"
+                    type="button"
+                    view="action"
+                    href={translate('contactAppLink')}
+                    target="_blank"
+                    className="btn"
+                >
+                    <Icon data={userLocale === 'zh' ? ArrowShapeDownToLine : LogoTelegram} />
+                    <TranslatedText translateKey="contactApp" />
+                </Button>
+                <Button
+                    size="l"
+                    view="outlined-contrast"
+                    type="button"
+                    href={cvDownloadUrl}
+                    target="_blank"
+                    className="btn"
+                >
+                    <Icon data={ArrowShapeDownToLine} />
+                    {translate('downloadCvButton')}
+                </Button>
+            </GroupContent>
             <Button
                 size="l"
+                view="flat-contrast"
                 type="button"
-                view="action"
-                href={translate('contactAppLink')}
+                href="https://github.com/danilkladnitsky"
+                className="btn"
                 target="_blank"
             >
-                <Icon data={userLocale === 'zh' ? ArrowShapeDownToLine : LogoTelegram} />
-                <TranslatedText translateKey="contactApp" />
-            </Button>
-            <Button
-                size="l"
-                view="outlined-contrast"
-                type="button"
-                href={cvDownloadUrl}
-                target="_blank"
-            >
-                <Icon data={ArrowShapeDownToLine} />
-                {translate('downloadCvButton')}
+                <Icon data={Code} />
+                Github
             </Button>
         </GroupContent>
     );
