@@ -9,7 +9,7 @@ import {TranslatedText} from '@/i18n/TranslatedText';
 import styles from './UsefulLinks.module.scss';
 
 export const UsefulLinks = () => {
-    const {translate} = useAppContext();
+    const {translate, userLocale} = useAppContext();
     const cvDownloadUrl = translate('cvPath');
 
     return (
@@ -21,7 +21,7 @@ export const UsefulLinks = () => {
                 href={translate('contactAppLink')}
                 target="_blank"
             >
-                <Icon data={LogoTelegram} />
+                <Icon data={userLocale === 'zh' ? ArrowShapeDownToLine : LogoTelegram} />
                 <TranslatedText translateKey="contactApp" />
             </Button>
             <Button

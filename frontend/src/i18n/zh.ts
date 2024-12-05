@@ -9,7 +9,7 @@ const localeCn: LocaleConfig = {
     aboutDevOps: '我使用以下工具部署应用程序',
     downloadCvButton: '下载简历',
     contactApp: '微信',
-    contactAppLink: 'https://u.wechat.com/kOyupo89Keql_B-3ZIsjCxo',
+    contactAppLink: 'weixin/qrcode.jpg',
 };
 
 export default localeCn;
