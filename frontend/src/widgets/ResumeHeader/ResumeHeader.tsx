@@ -27,7 +27,7 @@ export const ResumeHeader = () => {
         <HeaderContent className={styles.headerWrapper}>
             <GroupContent className={styles.resumeHeader}>
                 <Text as="h2" variant="header-1">
-                    kladnitsky.ru
+                    kladnitsky.ru | develop
                 </Text>
                 <RadioButton
                     width="max"
