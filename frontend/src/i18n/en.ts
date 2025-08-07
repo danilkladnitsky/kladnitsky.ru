@@ -1,7 +1,7 @@
 import {LocaleConfig} from './locale-config';
 
 const localeEn: LocaleConfig = {
-    cvPath: 'resume/en.pdf',
+    cvPath: 'resume/ru.pdf',
     greetingShort: 'Good afternoon.',
     greetingLong: 'My name is Danil Kladnitsky,\nI develop web interfaces at Gazprombank.',
     aboutFrontend: 'I create frontend applications using',
